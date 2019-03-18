@@ -2,12 +2,14 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
-import { Progress } from 'react-sweet-progress'
 import 'react-sweet-progress/lib/style.css'
 
-import pic02 from '../assets/images/pic02.jpg'
+import hopposter from '../assets/images/hopposter.jpg'
 import vincent from '../assets/images/vincent.jpg'
-import pic04 from '../assets/images/pic04.jpg'
+import jithub from '../assets/images/jithub.png'
+
+import resumepdf from '../assets/resume/ELSTON_AW_YU_XUAN_CV.pdf'
+
 class Homepage extends React.Component {
   render() {
     const siteTitle = 'Elston Aw'
@@ -275,7 +277,7 @@ class Homepage extends React.Component {
 
             <div className="col-4">
               <span className="image fit">
-                <img src={pic02} alt="" />
+                <img src={hopposter} alt="" />
               </span>
               <h3>Hop Café App</h3>
               <p>
@@ -305,26 +307,28 @@ class Homepage extends React.Component {
                 security, sustainability, societal impact, fault-tolerant
                 design, etc.
               </p>
-              <ul className="actions">
-                <li>
-                  <a href="#" className="button">
-                    More
-                  </a>
-                </li>
-              </ul>
             </div>
             <div className="col-4">
               <span className="image fit">
-                <img src={pic04} alt="" />
+                <img src={jithub} alt="" />
               </span>
-              <h3>Magna feugiat lorem</h3>
+              <h3>JitHub - Personal Meeting Scheduler</h3>
               <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
+                JitHub is an application that saves your contacts and helps you
+                schedule meetings through cross-checking the timetable of your
+                group mates.
+              </p>
+              <p>
+                JitHub was built in CS2113T Software Engineering module to teach
+                students the principles of software engineering and Object
+                Oriented Programming in Java.
               </p>
               <ul className="actions">
                 <li>
-                  <a href="#" className="button">
+                  <a
+                    href="https://github.com/CS2113-AY1819S1-W12-1/main"
+                    className="button"
+                  >
                     More
                   </a>
                 </li>
@@ -354,7 +358,7 @@ class Homepage extends React.Component {
                 </a>
               </li>
               <li>
-                <a href="#" className="button">
+                <a href={resumepdf} className="button">
                   View My Resume
                 </a>
               </li>
