@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/959c6725-57d8-4c9c-854d-75f9c83d2f3d/deploy-status)](https://app.netlify.com/sites/practical-carson-c0e9a5/deploys)
+
 # gatsby-starter-photon
 Gatsby.js V2 starter based on the Photon site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
 
