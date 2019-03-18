@@ -8,12 +8,12 @@ class Header extends React.Component {
         <div className="inner">
           <ProfilePicture src={profilepic} />
           <h1>
-            ELSTON (YU XUAN) <strong>AW</strong>
+            ELSTON <strong>AW</strong>
           </h1>
           <p>
-            I'm currently a Year 2 Computer Engineering student
+            Hello there! I'm Elston, currently a Year 2 Computer Engineering
             <br />
-            studying in the National University of Singapore, and
+            student studying in at National University of Singapore, and
             <br />
             my focus area is on full stack development.
           </p>

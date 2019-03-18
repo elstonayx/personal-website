@@ -733,6 +733,10 @@ ul {
   }
 }
 
+.unstyled {
+  list-style-type: none;
+}
+
 dl {
   margin: 0 0 _size(element-margin) 0;
 }
