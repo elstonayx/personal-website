@@ -8,7 +8,7 @@ import hopposter from '../assets/images/hopposter.jpg'
 import vincent from '../assets/images/vincent.jpg'
 import jithub from '../assets/images/jithub.png'
 
-import resumepdf from '../assets/resume/ELSTON_AW_YU_XUAN_CV.pdf'
+import resumepdf from '../assets/resume/Elston_Yu_Xuan_AW_Resume.pdf'
 
 class Homepage extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Homepage extends React.Component {
     return (
       <Layout>
         <Helmet title={siteTitle} />
-        <section className="main style1">
+        <section id="one" className="main style1">
           <div className="grid-wrapper">
             <div className="col-12">
               <header className="major">
@@ -57,7 +57,7 @@ class Homepage extends React.Component {
           </div>
         </section>
 
-        <section id="one" className="main style1">
+        <section className="main style1">
           <div className="grid-wrapper">
             <div className="col-12">
               <header className="major">
