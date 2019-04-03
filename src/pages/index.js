@@ -9,7 +9,45 @@ import vincent from '../assets/images/vincent.jpg'
 import jithub from '../assets/images/jithub.png'
 
 import resumepdf from '../assets/resume/Elston_Yu_Xuan_AW_Resume.pdf'
+import SkillBars from '../components/skillbar'
 
+const WebDev = [
+  { type: 'HTML', level: 99 },
+  { type: 'CSS', level: 98 },
+  { type: 'Node.JS', level: 90 },
+  { type: 'React', level: 85 },
+  { type: 'Express', level: 70 },
+  { type: 'PHP', level: 20 },
+]
+
+const Database = [
+  { type: 'PostgresQL', level: 50 },
+  { type: 'MongoDB', level: 70 },
+  { type: 'SQL', level: 50 },
+]
+
+const Language = [
+  { type: 'Javascript', level: 85 },
+  { type: 'C', level: 90 },
+  { type: 'C++', level: 85 },
+  { type: 'Python', level: 80 },
+  { type: 'Java', level: 80 },
+  { type: 'Assembly', level: 50 },
+]
+
+const Hardware = [
+  { type: 'Microcontroller Programming', level: 85 },
+  { type: 'FreeRTOS', level: 80 },
+  { type: 'Verilog', level: 85 },
+  { type: 'Circuit Design', level: 80 },
+]
+
+const Analytics = [
+  { type: 'Pandas', level: 70 },
+  { type: 'Matplotlib', level: 70 },
+  { type: 'seaborn', level: 70 },
+  { type: 'Jupyter Notebook', level: 80 },
+]
 class Homepage extends React.Component {
   render() {
     const siteTitle = 'Elston Aw'
@@ -55,6 +93,17 @@ class Homepage extends React.Component {
                 <p>
                   Pursuing a Computer Engineering degree in the National
                   University of Singapore.
+                </p>
+              </div>
+              <br />
+              <div className="smallDiv">
+                <h2>Anglo-Chinese Junior College</h2>
+                <h4>Science Stream - Class of 2014</h4>
+                <br />
+                <p>
+                  Took the General Cambridge-Singapore Education Advanced Level
+                  Examinations, with subjects Physics, Chemistry, Mathematics
+                  and Economics.
                 </p>
               </div>
             </div>
@@ -223,54 +272,24 @@ class Homepage extends React.Component {
 
               <div className="smallDiv col-6">
                 <h3>Web Development</h3>
-                <ul>
-                  <li>HTML/CSS</li>
-                  <li>Node.JS</li>
-                  <li>React</li>
-                  <li>Express.JS</li>
-                  <li>PHP</li>
-                </ul>
+                <SkillBars hue="100" saturation="40" skills={WebDev} />
               </div>
-              <br />
               <div className="smallDiv col-6">
                 <h3>Database</h3>
-                <ul>
-                  <li>PostgresQL</li>
-                  <li>MongoDB</li>
-                  <li>MySQL</li>
-                </ul>
+                <SkillBars hue="200" saturation="40" skills={Database} />
               </div>
-              <br />
               <div className="smallDiv col-6">
                 <h3>Programming Languages</h3>
-                <ul>
-                  <li>C</li>
-                  <li>C++</li>
-                  <li>Python</li>
-                  <li>Java</li>
-                  <li>Javascript</li>
-                  <li>Assembly</li>
-                </ul>
+                <SkillBars hue="300" saturation="40" skills={Language} />
               </div>
-              <br />
               <div className="smallDiv col-6">
                 <h3>Hardware Design</h3>
-                <ul>
-                  <li>Microcontroller Programming (ATMega328P)</li>
-                  <li>FreeRTOS</li>
-                  <li>Verilog</li>
-                  <li>Circuit Design</li>
-                </ul>
+                <SkillBars hue="400" saturation="40" skills={Hardware} />
               </div>
               <br />
               <div className="smallDiv col-6">
                 <h3>Data Analytics</h3>
-                <ul>
-                  <li>Pandas</li>
-                  <li>matplotlib</li>
-                  <li>Seaborn</li>
-                  <li>Jupyter Notebook</li>
-                </ul>
+                <SkillBars hue="600" saturation="40" skills={Analytics} />
               </div>
             </div>
           </div>
@@ -368,7 +387,12 @@ class Homepage extends React.Component {
                 </a>
               </li>
               <li>
-                <a href={resumepdf} className="button">
+                <a
+                  href={resumepdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button"
+                >
                   View My Resume
                 </a>
               </li>
