@@ -164,18 +164,12 @@ class Homepage extends React.Component {
                   </p>
                   <b>Key Job Scope</b>
                   <ul>
+                    <li>Assist students through weekly lab work.</li>
                     <li>
-                      Handled large transactions for a major global
-                      technological company.
+                      Mark lab reports, giving timely feedback for students.
                     </li>
                     <li>
-                      Used Customer Relations Management tools and in-house
-                      management tools to communicate with clients and handle
-                      transactions.
-                    </li>
-                    <li>
-                      Took part in the annual closing in June 2017, to close
-                      many other major deals with partners.
+                      Ensure the safety of the experiments being conducted.
                     </li>
                   </ul>
                 </TimelineItem>
