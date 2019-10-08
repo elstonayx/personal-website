@@ -11,11 +11,16 @@ class Header extends React.Component {
             ELSTON <strong>AW</strong>
           </h1>
           <p>
-            Hello there! I'm Elston, currently a Year 2 Computer Engineering
+            Hello there! I'm Elston, currently a Year 3 Computer Engineering
             <br />
             student studying in at National University of Singapore, and
             <br />
             my focus area is on full stack development.
+            <br />
+            <br />
+            I'm currently located in New York City, with a full time internship
+            <br />
+            as a software engineer.
           </p>
           <ul className="actions">
             <li>

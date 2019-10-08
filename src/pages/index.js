@@ -15,7 +15,7 @@ const WebDev = [
   { type: 'HTML', level: 99 },
   { type: 'CSS', level: 98 },
   { type: 'Node.JS', level: 90 },
-  { type: 'React', level: 85 },
+  { type: 'React', level: 90 },
   { type: 'Express', level: 70 },
   { type: 'PHP', level: 20 },
 ]
@@ -23,14 +23,14 @@ const WebDev = [
 const Database = [
   { type: 'PostgresQL', level: 50 },
   { type: 'MongoDB', level: 70 },
-  { type: 'SQL', level: 50 },
+  { type: 'SQL', level: 70 },
 ]
 
 const Language = [
   { type: 'Javascript', level: 85 },
   { type: 'C', level: 90 },
   { type: 'C++', level: 85 },
-  { type: 'Python', level: 80 },
+  { type: 'Python', level: 90 },
   { type: 'Java', level: 80 },
   { type: 'Assembly', level: 50 },
 ]
@@ -62,7 +62,7 @@ class Homepage extends React.Component {
                 <h2>My Background</h2>
               </header>
               <p>
-                I am a Year 2 Computer Engineering student looking for
+                I am a Year 3 Computer Engineering student looking for
                 opportunities to develop my technical and soft skills. I am
                 diligent and self-driven, and I like challenges that can push
                 myself to greater heights. My field of interests are in full
@@ -121,11 +121,33 @@ class Homepage extends React.Component {
               <Timeline lineColor={'#ddd'}>
                 <TimelineItem
                   key="001"
-                  dateText="March 2019 – Present"
-                  style={{ color: '#e86971' }}
+                  dateText="Aug 2019 - present"
+                  dateInnerStyle={{ background: '#EE82EE' }}
+                  style={{ color: '#EE82EE' }}
                 >
+                  <h2>B12</h2>
+                  <h4>Full Stack Software Engineering Intern</h4>
+                  <br />
+                  <p>
+                    B12 creates custom websites that are accessible to small
+                    businesses. With a Do it for You approach, it creates
+                    agency-quality websites at a fraction of the cost and time.
+                  </p>
+                  <b>Key Job Scope</b>
+                  <ul>
+                    <li>
+                      Improve company's customer acquisition by implementing A/B
+                      tests and features, and fixing bugs.
+                    </li>
+                    <li>
+                      Analyse data to improve customers' epxperience in the
+                      product.
+                    </li>
+                  </ul>
+                </TimelineItem>
+                <TimelineItem key="002" dateText="March – Jul 2019">
                   <h2>Mobbin</h2>
-                  <h4>Front-end Software Engineering Intern</h4>
+                  <h4>Full Stack Software Engineering Intern</h4>
                   <br />
                   <p>
                     Mobbin is a hand-picked collection of the latest mobile
@@ -146,8 +168,8 @@ class Homepage extends React.Component {
                   </ul>
                 </TimelineItem>
                 <TimelineItem
-                  key="002"
-                  dateText="Jan 2019 – Present"
+                  key="003"
+                  dateText="Jan - May 2019"
                   dateInnerStyle={{ background: '#61b8ff' }}
                 >
                   <h2>National University of Singapore</h2>
@@ -174,7 +196,7 @@ class Homepage extends React.Component {
                   </ul>
                 </TimelineItem>
                 <TimelineItem
-                  key="003"
+                  key="004"
                   dateText="Aug – Nov 2018"
                   dateInnerStyle={{ background: '#76bb7f' }}
                 >
@@ -202,7 +224,7 @@ class Homepage extends React.Component {
                   </ul>
                 </TimelineItem>
                 <TimelineItem
-                  key="004"
+                  key="005"
                   dateText="Feb – Jul 2017"
                   dateInnerStyle={{ background: '#fcd307' }}
                 >
